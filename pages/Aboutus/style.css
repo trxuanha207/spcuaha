@@ -79,8 +79,7 @@ header.shadow{
     font-weight: 500;
 }
 
-.navbar a:hover,
-.navbar .active {
+.navbar a:hover {
     color: var(--main-color);
 }
 
@@ -128,7 +127,7 @@ header.shadow{
     background: var(--container-color);
 }
 .home-container{
-    display: grid;
+    display: inline-flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
