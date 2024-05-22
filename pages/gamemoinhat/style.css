@@ -117,6 +117,26 @@ header.shadow{
     padding: 4px;
     color: var(--bg-color);
 }
+.home{
+    max-width: 1300px;
+    margin: auto;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: var(--container-color);
+}
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size: 2.4rem;
+}
+.home-text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}
 .btn{
     padding: 13px 26px;
     background: var(--main-color);
@@ -330,79 +350,4 @@ body{
         width: 135px;
     }
 
-}
-html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  } 
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  .home{
-    max-width: 1300px;
-    margin: auto;
-    min-height: 640px;
-    display: flex;
-    align-items: center;
-    background: var(--container-color);
-}
-.home-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-.home-text h1{
-    font-size: 2.4rem;
-}
-.home-text p {
-    font-size: 0.938rem;
-    margin: 0.5rem 0 1.4rem;
 }
